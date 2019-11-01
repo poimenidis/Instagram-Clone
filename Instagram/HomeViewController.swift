@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
 
@@ -17,7 +18,22 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func logOut_OnClick(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+                let storyboard = UIStoryboard(name: "Main", bundle: nil);
+                let vc = storyboard.instantiateViewController(withIdentifier: "SignInViewId") ; // MySecondSecreen the storyboard ID
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true, completion: nil);
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
 
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 

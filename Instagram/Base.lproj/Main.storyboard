@@ -10,7 +10,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewId" id="BYZ-38-t0r" customClass="SignInViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="1Zr-HV-ogd" id="jjG-TW-3AH"/>
                         <outlet property="passwordTextField" destination="dfn-ai-oF4" id="3UT-lV-DzD"/>
+                        <outlet property="signInButton" destination="M1W-pp-01Q" id="NFj-Bg-SqV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -140,9 +141,10 @@
                                             <action selector="signup_OnClick:" destination="3Fb-Pe-Rpq" eventType="touchUpInside" id="OGq-es-U0k"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TDM-We-VUv">
-                                        <rect key="frame" x="122" y="154" width="170" height="136"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TDM-We-VUv">
+                                        <rect key="frame" x="147" y="120" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                 </subviews>
@@ -157,12 +159,13 @@
                         <outlet property="emailTextField" destination="MCb-wK-OTE" id="JIf-yz-Dpk"/>
                         <outlet property="imageView" destination="TDM-We-VUv" id="O7d-Qb-s93"/>
                         <outlet property="passwordTextField" destination="bGQ-Ya-ipz" id="HyR-x7-ese"/>
+                        <outlet property="signUpButton" destination="CnF-ft-feQ" id="OjN-Z7-NJ0"/>
                         <outlet property="userNameTextField" destination="ugD-HP-cly" id="Jwz-39-Sue"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cs4-Jv-3Wo" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-296" y="836"/>
+            <point key="canvasLocation" x="-297.10144927536237" y="835.71428571428567"/>
         </scene>
         <!--tabBarViewId-->
         <scene sceneID="Gtb-Qc-GKO">
