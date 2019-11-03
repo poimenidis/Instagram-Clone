@@ -13,4 +13,7 @@ pod 'Firebase/Database'
 pod 'Firebase/Storage'
 pod 'ProgressHUD'
 
+platform :ios, '8.0'
+pod 'SDWebImage', '~> 5.0'
+
 end
