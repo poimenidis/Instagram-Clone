@@ -9,6 +9,7 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
+    
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var uploadImage: UIImageView!

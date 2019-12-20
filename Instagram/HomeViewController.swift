@@ -31,8 +31,6 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         cell.uploadImage.sd_setImage(with: URL(string: self.posts[indexPath.row].imageUrl))
         
         cell.profileImage.sd_setImage(with: URL(string: self.posts[indexPath.row].userUrl))
-        
-        
 
         
         return cell
@@ -112,13 +110,4 @@ class HomeViewController: UIViewController, UITableViewDataSource {
 
 }
 
-struct Post  : Identifiable{
-    
-    var id : String
-    var text : String
-    var imageUrl : String
-    var userName : String
-    var userUrl : String
-    
-    
-}
+

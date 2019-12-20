@@ -17,6 +17,8 @@
 		E25629FE2369D8E700BE430D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25629FD2369D8E700BE430D /* FavoriteViewController.swift */; };
 		E2562A002369D8F700BE430D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25629FF2369D8F700BE430D /* ProfileViewController.swift */; };
 		E2616873236AE636008CCB4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2616872236AE636008CCB4A /* User.swift */; };
+		E262336123AD2A110054FEC5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262336023AD2A110054FEC5 /* CollectionViewCell.swift */; };
+		E262336323AD39C50054FEC5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262336223AD39C40054FEC5 /* Post.swift */; };
 		E28958A023697D6500F53FE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289589F23697D6500F53FE2 /* AppDelegate.swift */; };
 		E28958A223697D6500F53FE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28958A123697D6500F53FE2 /* SceneDelegate.swift */; };
 		E28958A423697D6500F53FE2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28958A323697D6500F53FE2 /* SignInViewController.swift */; };
@@ -39,6 +41,8 @@
 		E25629FD2369D8E700BE430D /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		E25629FF2369D8F700BE430D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E2616872236AE636008CCB4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E262336023AD2A110054FEC5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E262336223AD39C40054FEC5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E289589C23697D6500F53FE2 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E289589F23697D6500F53FE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28958A123697D6500F53FE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				E28958AA23697D6600F53FE2 /* LaunchScreen.storyboard */,
 				E28958AD23697D6600F53FE2 /* Info.plist */,
 				E24A6E8E236EBBEC0089B16E /* GoogleService-Info.plist */,
+				E262336023AD2A110054FEC5 /* CollectionViewCell.swift */,
+				E262336223AD39C40054FEC5 /* Post.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 			files = (
 				E25629FA2369D8A100BE430D /* SearchViewController.swift in Sources */,
 				E25629F82369D88B00BE430D /* HomeViewController.swift in Sources */,
+				E262336123AD2A110054FEC5 /* CollectionViewCell.swift in Sources */,
 				E28958A423697D6500F53FE2 /* SignInViewController.swift in Sources */,
 				E28958A023697D6500F53FE2 /* AppDelegate.swift in Sources */,
 				E25629FC2369D8B400BE430D /* PhotoViewController.swift in Sources */,
@@ -247,6 +254,7 @@
 				E2C208A7236DFC6D006C95E4 /* TableViewCell.swift in Sources */,
 				E2562A002369D8F700BE430D /* ProfileViewController.swift in Sources */,
 				E25629FE2369D8E700BE430D /* FavoriteViewController.swift in Sources */,
+				E262336323AD39C50054FEC5 /* Post.swift in Sources */,
 				E2616873236AE636008CCB4A /* User.swift in Sources */,
 				E28958A223697D6500F53FE2 /* SceneDelegate.swift in Sources */,
 			);
