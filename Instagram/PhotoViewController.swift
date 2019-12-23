@@ -128,7 +128,7 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
             
             let now = Date()
             let formatter = DateFormatter()
-            formatter.dateFormat = "YYYY MM DD HH:mm:ss"
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
             let today_string = formatter.string(from: now)
 
             return today_string

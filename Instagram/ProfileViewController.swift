@@ -18,6 +18,21 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource,UIColl
     @IBOutlet weak var collectionView: UICollectionView!
     var posts : [Post] = []
     
+    @IBAction func logOutButton(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+                let storyboard = UIStoryboard(name: "Main", bundle: nil);
+                let vc = storyboard.instantiateViewController(withIdentifier: "SignInViewId") ; // MySecondSecreen the storyboard ID
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true, completion: nil);
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
+    
+    
     //number of cells
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return posts.count
@@ -28,8 +43,18 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource,UIColl
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         
         cell.imageView.sd_setImage(with: URL(string: self.posts[indexPath.row].imageUrl))
+
         
         return cell
+    }
+    
+    //action when cell is clicked sos
+    //best way to change ViewControllers!!!
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "ImageId") as! ImageViewController
+        vc.imageTitle = self.posts[indexPath.row].text
+        vc.imageUrl = self.posts[indexPath.row].imageUrl
+        self.show(vc, sender: self)
     }
     
     //size of cell
@@ -95,7 +120,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource,UIColl
                 let imageUrl = value?["photo"] as? String ?? ""
                 
                 
-                self.posts.insert(Post(id: "", text: text, imageUrl: imageUrl, userName: "makis", userUrl: "makis"), at: 0)
+                self.posts.insert(Post(id: "", text: text, imageUrl: imageUrl, userName: "", userUrl: ""), at: 0)
                 self.collectionView.reloadData()
             
                 
@@ -111,6 +136,16 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource,UIColl
         
 
     }
+    
+//    //action when imageView is clicked sos
+//    //best way to change ViewControllers!!!
+//    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+//    {
+//        let vc = self.storyboard!.instantiateViewController(withIdentifier: "ImageId") as! ImageViewController
+//        vc.imageTitle = self.posts[1].text
+//        self.show(vc, sender: self)
+//
+//    }
 
     
 

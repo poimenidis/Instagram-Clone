@@ -145,6 +145,7 @@ class SignUpViewController: UIViewController,UIImagePickerControllerDelegate , U
 
     }
     
+    //sosara. i am adding an action when textfields are getting changed
     func handleTextField(){
         userNameTextField.addTarget(self, action: #selector(SignUpViewController.textFieldChanged), for: UIControl.Event.editingChanged)
         emailTextField.addTarget(self, action: #selector(SignUpViewController.textFieldChanged), for: UIControl.Event.editingChanged)
@@ -159,7 +160,7 @@ class SignUpViewController: UIViewController,UIImagePickerControllerDelegate , U
             signUpButton.isEnabled = false
         }
     }
-    
+    //
 
     /*
     // MARK: - Navigation
