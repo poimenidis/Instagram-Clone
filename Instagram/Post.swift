@@ -15,6 +15,8 @@ struct Post  {
     var imageUrl : String
     var userName : String
     var userUrl : String
+    var imageId : String
+    var likes : [String]
     
     
 }

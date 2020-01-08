@@ -15,6 +15,8 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var uploadImage: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var comment: UILabel!
+    @IBOutlet weak var imageHeart: UIImageView!
+    @IBOutlet weak var likeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
