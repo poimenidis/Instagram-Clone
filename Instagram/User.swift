@@ -22,8 +22,8 @@ class User {
         self.imageUrl = ""
     }
     
-    init(username: String, imageUrl: String){
-        self.id = ""
+    init(id: String, username: String, imageUrl: String){
+        self.id = id
         self.email = ""
         self.username = username
         self.imageUrl = imageUrl

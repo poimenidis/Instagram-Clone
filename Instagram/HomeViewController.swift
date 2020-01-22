@@ -156,7 +156,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         ref = Database.database().reference()
         
         ref.child("Posts").observe(.value, with: { (snapshot) in
-            
+            self.posts.removeAll()
             for child in snapshot.children {
                 
                 let snap = child as! DataSnapshot
@@ -168,14 +168,13 @@ class HomeViewController: UIViewController, UITableViewDataSource {
                 let imageId = snap.key
                 var likes : [String] = []
                 
-                self.posts.removeAll()
+                
                 ref.child("Users").child(id).observeSingleEvent(of: .value, with: { (snapshot) in
                     
                     let value = snapshot.value as? NSDictionary
                     
                     let username = value?["username"] as? String ?? ""
                     let imageurl = value?["imageUrl"] as? String ?? ""
-                    
                     ref.child("Posts").child(imageId).child("Likes").observeSingleEvent(of: .value, with: { (snapshot) in
                         
                         
@@ -185,6 +184,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
                             
                             likes.append(snap.key)
                         }
+                        
                         
                         self.posts.insert(Post(id: id, text: text, imageUrl: imageUrl, userName: username, userUrl: imageurl , imageId: imageId, likes: likes), at: 0)
                         self.posts.sort(by: { $0.imageId > $1.imageId })

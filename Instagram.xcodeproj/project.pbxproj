@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		C1DD83C8FEB1932583529027 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466F37EFBF9178B894DD8FB9 /* Pods_Instagram.framework */; };
 		E2081FC523AE1A23003D66AE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2081FC423AE1A23003D66AE /* EditProfileViewController.swift */; };
+		E21E65FC23CB2962003FF207 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E65FB23CB2962003FF207 /* SearchViewCell.swift */; };
 		E22EF3DE2369EDA4008F0BF0 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22EF3DD2369EDA4008F0BF0 /* TabBar.storyboard */; };
 		E246B3D723B165F700380477 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E246B3D623B165F700380477 /* FriendViewController.swift */; };
 		E24817FA23B0BE41000AAC0E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24817F923B0BE41000AAC0E /* ImageViewController.swift */; };
+		E249711823D3402300A83F90 /* UserChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249711723D3402300A83F90 /* UserChatTableViewCell.swift */; };
+		E249711A23D3403900A83F90 /* FriendChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249711923D3403900A83F90 /* FriendChatTableViewCell.swift */; };
 		E24A6E8F236EBBEC0089B16E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E24A6E8E236EBBEC0089B16E /* GoogleService-Info.plist */; };
 		E25629F62369C85000BE430D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25629F52369C85000BE430D /* SignUpViewController.swift */; };
 		E25629F82369D88B00BE430D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25629F72369D88B00BE430D /* HomeViewController.swift */; };
@@ -29,6 +32,7 @@
 		E28958A923697D6600F53FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28958A823697D6600F53FE2 /* Assets.xcassets */; };
 		E28958AC23697D6600F53FE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28958AA23697D6600F53FE2 /* LaunchScreen.storyboard */; };
 		E2C208A7236DFC6D006C95E4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C208A6236DFC6D006C95E4 /* TableViewCell.swift */; };
+		E2E65AE623D860D700072B12 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E65AE523D860D700072B12 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +40,12 @@
 		80C5444B87730250923C7741 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		B12CCC5AC1956C137FFD5B0C /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		E2081FC423AE1A23003D66AE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		E21E65FB23CB2962003FF207 /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
 		E22EF3DD2369EDA4008F0BF0 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		E246B3D623B165F700380477 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		E24817F923B0BE41000AAC0E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		E249711723D3402300A83F90 /* UserChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChatTableViewCell.swift; sourceTree = "<group>"; };
+		E249711923D3403900A83F90 /* FriendChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendChatTableViewCell.swift; sourceTree = "<group>"; };
 		E24A6E8E236EBBEC0089B16E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E25629F52369C85000BE430D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E25629F72369D88B00BE430D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +65,7 @@
 		E28958AB23697D6600F53FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E28958AD23697D6600F53FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C208A6236DFC6D006C95E4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E2E65AE523D860D700072B12 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,19 +110,23 @@
 		E289589E23697D6500F53FE2 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				E249711923D3403900A83F90 /* FriendChatTableViewCell.swift */,
+				E249711723D3402300A83F90 /* UserChatTableViewCell.swift */,
+				E25629FD2369D8E700BE430D /* FavoriteViewController.swift */,
 				E246B3D623B165F700380477 /* FriendViewController.swift */,
 				E24817F923B0BE41000AAC0E /* ImageViewController.swift */,
 				E2081FC423AE1A23003D66AE /* EditProfileViewController.swift */,
 				E262336023AD2A110054FEC5 /* CollectionViewCell.swift */,
 				E2C208A6236DFC6D006C95E4 /* TableViewCell.swift */,
 				E25629F72369D88B00BE430D /* HomeViewController.swift */,
+				E21E65FB23CB2962003FF207 /* SearchViewCell.swift */,
 				E25629F92369D8A100BE430D /* SearchViewController.swift */,
 				E25629FB2369D8B400BE430D /* PhotoViewController.swift */,
-				E25629FD2369D8E700BE430D /* FavoriteViewController.swift */,
 				E25629FF2369D8F700BE430D /* ProfileViewController.swift */,
 				E25629F52369C85000BE430D /* SignUpViewController.swift */,
 				E28958A323697D6500F53FE2 /* SignInViewController.swift */,
 				E2616872236AE636008CCB4A /* User.swift */,
+				E2E65AE523D860D700072B12 /* Message.swift */,
 				E22EF3DD2369EDA4008F0BF0 /* TabBar.storyboard */,
 				E28958A523697D6500F53FE2 /* Main.storyboard */,
 				E289589F23697D6500F53FE2 /* AppDelegate.swift */,
@@ -257,16 +269,20 @@
 				E25629F82369D88B00BE430D /* HomeViewController.swift in Sources */,
 				E262336123AD2A110054FEC5 /* CollectionViewCell.swift in Sources */,
 				E28958A423697D6500F53FE2 /* SignInViewController.swift in Sources */,
+				E249711A23D3403900A83F90 /* FriendChatTableViewCell.swift in Sources */,
 				E28958A023697D6500F53FE2 /* AppDelegate.swift in Sources */,
 				E25629FC2369D8B400BE430D /* PhotoViewController.swift in Sources */,
 				E2081FC523AE1A23003D66AE /* EditProfileViewController.swift in Sources */,
 				E24817FA23B0BE41000AAC0E /* ImageViewController.swift in Sources */,
+				E249711823D3402300A83F90 /* UserChatTableViewCell.swift in Sources */,
 				E25629F62369C85000BE430D /* SignUpViewController.swift in Sources */,
 				E2C208A7236DFC6D006C95E4 /* TableViewCell.swift in Sources */,
 				E2562A002369D8F700BE430D /* ProfileViewController.swift in Sources */,
+				E21E65FC23CB2962003FF207 /* SearchViewCell.swift in Sources */,
 				E25629FE2369D8E700BE430D /* FavoriteViewController.swift in Sources */,
 				E246B3D723B165F700380477 /* FriendViewController.swift in Sources */,
 				E262336323AD39C50054FEC5 /* Post.swift in Sources */,
+				E2E65AE623D860D700072B12 /* Message.swift in Sources */,
 				E2616873236AE636008CCB4A /* User.swift in Sources */,
 				E28958A223697D6500F53FE2 /* SceneDelegate.swift in Sources */,
 			);
